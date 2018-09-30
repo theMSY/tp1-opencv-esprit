@@ -1,0 +1,15 @@
+1) Quelle est la différence le type MAT et IplImage?:
+
+IplImage est la structure utilisé pour sauvegarder lesimage en C (utilisé par OpenCV 1.x). 
+Cet interface necessite la gestion manuelle des referances et du memoire.
+
+MAT est l'analogue de IplImage en C++. Avec l'utilisation du logique orienté objet, la gestion des réferences est devenu automatique.
+
+2) Quelles sont les fonctions correspondantes àchaque type permettant de lire et afficher une image? :
+
+avec ImlImage : "cvLoadImage" pour lire l'image et "cvShowImage" pour l'afficher
+avec MAT : "imread" pour lire l'image et "imshow" pour l'afficher
+
+3)Citer les diferrentes méthodes permatant d’ouvrir un flux video puis l’afficher:
+
+On peut utiliser "VideoCapture" pour recuperer un video cadre par cadre et l'afficher successivement avec "imshow". 
